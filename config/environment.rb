@@ -3,3 +3,6 @@ require File.expand_path('../application', __FILE__)
 
 # Initialize the Rails application.
 SampleApp::Application.initialize!
+
+
+# DATABASE_URL=postgres://postgres@localhost/sample_app

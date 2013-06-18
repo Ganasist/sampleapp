@@ -7,15 +7,15 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
+gem 'pg', '0.15.1'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.7'
   gem 'rspec-rails', '2.13.1'
   # The following optional lines are part of the advanced setup.
   gem 'guard-rspec', '2.5.0'
-  # gem 'spork-rails', github: 'railstutorial/spork-rails'
-  # gem 'guard-spork', '1.5.0'
-  # gem 'childprocess', '0.3.6'
+  gem 'spork-rails', github: 'A-gen/spork-rails'
+  gem 'guard-spork', '1.5.0'
+  gem 'childprocess'
 end
 
 group :test do
@@ -42,12 +42,7 @@ gem 'coffee-rails', '4.0.0'
 gem 'jquery-rails', '2.2.1'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
-gem 'nokogiri'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
-end
-
-group :production do
-  gem 'pg', '0.15.1'
 end
