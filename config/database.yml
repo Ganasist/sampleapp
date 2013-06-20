@@ -8,7 +8,7 @@ development:
   encoding: unicode
   database: sample_app
   host: localhost
-  user: johntrichereau@gmail.com
+  user: johntrichereau
   password:
 
 # Warning: The database defined as "test" will be erased and
@@ -20,5 +20,5 @@ test:
   encoding: unicode
   database: sample_app
   host: localhost
-  user: johntrichereau@gmail.com
+  user: johntrichereau
   password:
