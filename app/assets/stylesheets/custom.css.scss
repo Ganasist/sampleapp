@@ -14,6 +14,7 @@ $grayMediumLight: #eaeaea;
 
 html {
   overflow-y: scroll;
+  padding: 0px 30px;
 }
 
 body {
@@ -61,7 +62,6 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
-
 
 /* header */
 
@@ -172,4 +172,19 @@ input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
 }
