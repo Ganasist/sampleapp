@@ -44,12 +44,16 @@ describe "User pages" do
         it { should have_content(m1.content) }
         it { should have_content(m2.content) }
         it { should have_content(user.microposts.count) }
-      end
+      end 
+    end
+
+    describe "micropost count on sidebar" do
+      before { visit root_path }
+
+      it { should have_content(user.microposts.count) }
     end
 
     describe "delete links" do
-
-      it { should_not have_link('delete') }
 
       describe "as an admin user" do
         let(:admin) { FactoryGirl.create(:admin) }
@@ -82,7 +86,7 @@ describe "User pages" do
     before do
       sign_in user
       visit edit_user_path(user)
-    end
+  end
 
     describe "page" do
       it { should have_content("Update your profile") }
